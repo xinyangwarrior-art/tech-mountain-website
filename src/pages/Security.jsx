@@ -18,7 +18,7 @@ function Security() {
           </Link>
         </div>
         <div className="page-visual">
-          <img src="/assets/security-illustration.svg" alt="Security monitoring illustration" />
+          <img src="assets/security-illustration.svg" alt="Security monitoring illustration" />
         </div>
       </section>
 

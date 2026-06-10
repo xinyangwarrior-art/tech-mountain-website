@@ -18,7 +18,7 @@ function ManagedIT() {
           </Link>
         </div>
         <div className="page-visual">
-          <img src="/assets/managed-it-illustration.svg" alt="Managed IT support illustration" />
+          <img src="assets/managed-it-illustration.svg" alt="Managed IT support illustration" />
         </div>
       </section>
 

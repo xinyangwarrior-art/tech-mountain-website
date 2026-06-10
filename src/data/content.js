@@ -58,5 +58,5 @@ export const contact = {
     'Reach out today to talk about support, security, or your existing systems. We help businesses stay running without technology stress.',
   phone: '(303) 868-4928',
   email: 'info@techmountain.com',
-  address: '2224 S Fraser St. Unit 5, Aurora, CO 80014',
+  address: '20822 E Princeton Pl, Aurora CO. 80013',
 };
