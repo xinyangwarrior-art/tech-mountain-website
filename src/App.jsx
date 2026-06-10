@@ -10,7 +10,7 @@ function App() {
         <header className="topbar">
           <div className="brand">
             <Link to="/">
-              <img src="/assets/logo.svg" alt="Tech Mountain" />
+              <img src="./assets/logo.svg" alt="Tech Mountain" />
             </Link>
           </div>
           <nav className="nav-links">
