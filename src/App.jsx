@@ -43,7 +43,6 @@ function App() {
         </header>
 
         <ScrollToHash />
-        </header>
 
         <Routes>
           <Route path="/" element={<Home />} />
