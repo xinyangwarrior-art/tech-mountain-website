@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="app-shell">
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <header className="topbar">
           <div className="brand">
             <Link to="/">
