@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import managedIllustration from '/assets/managed-it-illustration.svg';
 
 function ManagedIT() {
   return (
@@ -18,14 +19,13 @@ function ManagedIT() {
           </Link>
         </div>
         <div className="page-visual">
-          <img src="assets/managed-it-illustration.svg" alt="Managed IT support illustration" />
+          <img src={managedIllustration} alt="Managed IT support illustration" />
         </div>
       </section>
 
       <section className="section detail-grid">
         <article className="service-card">
-          <h2>Support, monitoring, and maintenance</h2>
-          <p>
+                    <img src={managedIllustration} alt="Managed IT support illustration" />
             We handle help desk requests, device management, patching, and
             proactive monitoring so problems are caught before they interrupt
             your operations.

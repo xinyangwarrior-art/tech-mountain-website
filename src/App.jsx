@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import ManagedIT from './pages/ManagedIT';
 import Security from './pages/Security';
+import logo from '/assets/logo.svg';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <header className="topbar">
           <div className="brand">
             <Link to="/">
-              <img src="assets/logo.svg" alt="Tech Mountain" />
+              <img src={logo} alt="Tech Mountain" />
             </Link>
           </div>
           <nav className="nav-links">

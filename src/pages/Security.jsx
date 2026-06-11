@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import securityIllustration from '/assets/security-illustration.svg';
 
 function Security() {
   return (
@@ -18,7 +19,11 @@ function Security() {
           </Link>
         </div>
         <div className="page-visual">
+<<<<<<< HEAD
           <img src="assets/security-illustration.svg" alt="Security monitoring illustration" />
+=======
+          <img src={securityIllustration} alt="Security monitoring illustration" />
+>>>>>>> 06747c4 (Import SVG assets so Vite emits correct base URLs for gh-pages)
         </div>
       </section>
 
