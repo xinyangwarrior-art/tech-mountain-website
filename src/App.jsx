@@ -1,10 +1,30 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Home from './pages/Home';
 import ManagedIT from './pages/ManagedIT';
 import Security from './pages/Security';
 import logo from '/assets/logo.svg';
 
 function App() {
+  function ScrollToHash() {
+    const location = useLocation();
+    useEffect(() => {
+      if (location.hash) {
+        const id = location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          setTimeout(() => {
+            const el2 = document.getElementById(id);
+            if (el2) el2.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    }, [location]);
+    return null;
+  }
+
   return (
     <div className="app-shell">
       <Router>
@@ -18,8 +38,11 @@ function App() {
             <Link to="/">Home</Link>
             <Link to="/managed-it">Managed IT</Link>
             <Link to="/security">Security</Link>
-            <a href="#contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </nav>
+        </header>
+
+        <ScrollToHash />
         </header>
 
         <Routes>

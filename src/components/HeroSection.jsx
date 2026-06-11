@@ -8,9 +8,9 @@ function HeroSection({ hero }) {
         <h1>{hero.title}</h1>
         <p>{hero.subtitle}</p>
         <div className="hero-actions">
-          <a className="cta-button" href="#contact">
+          <Link className="cta-button" to="/#contact">
             {hero.cta}
-          </a>
+          </Link>
           <Link className="secondary-button" to="/managed-it">
             Explore Managed IT
           </Link>
